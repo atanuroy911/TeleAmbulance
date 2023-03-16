@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.07240f47.css",
+    "main.js": "/static/js/main.585f55e7.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/IIT_Kanpur_Logo.png": "/static/media/IIT_Kanpur_Logo.3073be2011f0a471c9b8.png",
+    "static/media/ambulance.jpeg": "/static/media/ambulance.ff49fa11a3e2f95926f0.jpeg",
+    "static/media/iot_light.png": "/static/media/iot_light.80a49922614c384c9855.png",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.07240f47.css.map": "/static/css/main.07240f47.css.map",
+    "main.585f55e7.js.map": "/static/js/main.585f55e7.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.07240f47.css",
+    "static/js/main.585f55e7.js"
+  ]
+}
