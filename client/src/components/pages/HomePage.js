@@ -3,11 +3,16 @@ import iit_logo from '../../assets/IIT_Kanpur_Logo.png';
 import iot_logo from '../../assets/iot_light.png';
 import { Outlet } from 'react-router-dom';
 // import iitk_text_logo from '../../assets/iitk_text_logo.png';
+import backgroundVideo from '../../assets/clouds.mp4';
+
 
 const HomePage = () => {
-    
+
     return (
         <main>
+            <video className='' autoPlay loop muted id='video'>
+                <source src={backgroundVideo} type='video/mp4' />
+            </video>
             <section className='grid grid-rows-1 grid-flow-col gap-4 '>
                 <div className='flex justify-end px-2 py-4'>
                     <div><img src={iit_logo} width={180} alt="" /></div>
