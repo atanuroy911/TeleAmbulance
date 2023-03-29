@@ -3,8 +3,13 @@ import { Route, Routes, useNavigate } from 'react-router-dom';
 import jwt_decode from "jwt-decode";
 import Topbar from '../../scenes/global/Topbar';
 import Dashboard from '../../scenes/dashboard';
+import { CssBaseline, ThemeProvider } from "@mui/material";
+import { ColorModeContext, useMode } from "../../theme";
+import Sidebar from '../../scenes/global/Sidebar';
 
 const Welcome = () => {
+    const [theme, colorMode] = useMode();
+    const [isSidebar, setIsSidebar] = useState(true);
     const navigate = useNavigate()
     const [name, setName] = useState('')
     const [loginState, setLoginState] = useState(false);
@@ -45,10 +50,20 @@ const Welcome = () => {
     return (
         loginState ?
             <>
-                <Topbar></Topbar>
-                <Routes>
-                    <Route path="/" element={<Dashboard />} />
-                </Routes>
+                <ColorModeContext.Provider value={colorMode}>
+                    <ThemeProvider theme={theme}>
+                        <CssBaseline />
+                        <div className="app">
+                            <Sidebar isSidebar={isSidebar} name={name} />
+                            <main className="content">
+                                <Topbar setIsSidebar={setIsSidebar} />
+                                <Routes>
+                                    <Route path="/" element={<Dashboard />} />
+                                </Routes>
+                            </main>
+                        </div>
+                    </ThemeProvider>
+                </ColorModeContext.Provider>
             </> :
             <>
                 <h1>You are not Logged in</h1>
