@@ -3,17 +3,19 @@ import { tokens } from "../../theme";
 import { mockTransactions } from "../../data/mockData";
 import DownloadOutlinedIcon from "@mui/icons-material/DownloadOutlined";
 import Header from "../../components/Header";
-import LineChart from "../../components/charts/LineChart";
-import GeographyChart from "../../components/charts/GeographyChart";
-import BarChart from "../../components/charts/BarChart";
+// import LineChart from "../../components/charts/LineChart";
+// import GeographyChart from "../../components/charts/GeographyChart";
+// import BarChart from "../../components/charts/BarChart";
 import StatBox from "../../components/charts/StatBox";
-import ProgressCircle from "../../components/ProgressCircle";
+// import ProgressCircle from "../../components/ProgressCircle";
 import AirlineSeatIndividualSuiteIcon from '@mui/icons-material/AirlineSeatIndividualSuite';
-import { LocalHospital, LocalShipping, MedicalServices } from "@mui/icons-material";
+import { ArrowForward, ArrowForwardIos, LocalHospital, LocalShipping, MedicalServices } from "@mui/icons-material";
+import { useNavigate } from "react-router-dom";
 
 const Dashboard = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
+  const navigate = useNavigate();
 
   return (
     <Box m="20px">
@@ -141,27 +143,29 @@ const Dashboard = () => {
                 fontWeight="600"
                 color={colors.grey[100]}
               >
-                Revenue Generated
+                Current Trip
               </Typography>
               <Typography
                 variant="h3"
                 fontWeight="bold"
                 color={colors.greenAccent[500]}
               >
-                $59,342.32
+                <>NA</>
               </Typography>
             </Box>
             <Box>
               <IconButton>
-                <DownloadOutlinedIcon
+                <ArrowForward
                   sx={{ fontSize: "26px", color: colors.greenAccent[500] }}
+                  onClick={() => { navigate('/current-trip'); }}
                 />
               </IconButton>
             </Box>
           </Box>
-          <Box height="250px" m="-20px 0 0 0">
+          {/* LINE CHART IS HERE COMMENTED OUT */}
+          {/* <Box height="250px" m="-20px 0 0 0">
             <LineChart isDashboard={true} />
-          </Box>
+          </Box> */}
         </Box>
         <Box
           gridColumn="span 4"
@@ -178,7 +182,7 @@ const Dashboard = () => {
             p="15px"
           >
             <Typography color={colors.grey[100]} variant="h5" fontWeight="600">
-              Recent Transactions
+              Last 5 Trips
             </Typography>
           </Box>
           {mockTransactions.map((transaction, i) => (
@@ -196,7 +200,7 @@ const Dashboard = () => {
                   variant="h5"
                   fontWeight="600"
                 >
-                  {transaction.txId}
+                  IITK Hospital
                 </Typography>
                 <Typography color={colors.grey[100]}>
                   {transaction.user}
@@ -208,7 +212,7 @@ const Dashboard = () => {
                 p="5px 10px"
                 borderRadius="4px"
               >
-                ${transaction.cost}
+                See Details
               </Box>
             </Box>
           ))}
@@ -222,7 +226,7 @@ const Dashboard = () => {
           p="30px"
         >
           <Typography variant="h5" fontWeight="600">
-            Campaign
+            Placeholder 1
           </Typography>
           <Box
             display="flex"
@@ -230,7 +234,7 @@ const Dashboard = () => {
             alignItems="center"
             mt="25px"
           >
-            <ProgressCircle size="125" />
+            {/* <ProgressCircle size="125" />
             <Typography
               variant="h5"
               color={colors.greenAccent[500]}
@@ -238,7 +242,7 @@ const Dashboard = () => {
             >
               $48,352 revenue generated
             </Typography>
-            <Typography>Includes extra misc expenditures and costs</Typography>
+            <Typography>Includes extra misc expenditures and costs</Typography> */}
           </Box>
         </Box>
         <Box
@@ -251,10 +255,10 @@ const Dashboard = () => {
             fontWeight="600"
             sx={{ padding: "30px 30px 0 30px" }}
           >
-            Sales Quantity
+            Placeholder 2
           </Typography>
           <Box height="250px" mt="-20px">
-            <BarChart isDashboard={true} />
+            {/* <BarChart isDashboard={true} /> */}
           </Box>
         </Box>
         <Box
@@ -268,10 +272,10 @@ const Dashboard = () => {
             fontWeight="600"
             sx={{ marginBottom: "15px" }}
           >
-            Geography Based Traffic
+            Placeholder 3
           </Typography>
           <Box height="200px">
-            <GeographyChart isDashboard={true} />
+            {/* <GeographyChart isDashboard={true} /> */}
           </Box>
         </Box>
       </Box>

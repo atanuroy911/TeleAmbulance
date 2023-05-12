@@ -83,7 +83,7 @@ const Sidebar = (props) => {
                 ml="15px"
               >
                 <Typography variant="h3" color={colors.grey[100]}>
-                  TeleAmbulance
+                  TeleMedicine
                 </Typography>
                 <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
                   <MenuOutlinedIcon />
@@ -122,7 +122,7 @@ const Sidebar = (props) => {
           <Box paddingLeft={isCollapsed ? undefined : "10%"}>
             <Item
               title="Dashboard"
-              to="/dashboard"
+              to="home"
               icon={<HomeOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
@@ -137,14 +137,14 @@ const Sidebar = (props) => {
             </Typography>
             <Item
               title="Current Trip"
-              to="/current-trip"
+              to="current-trip"
               icon={<ConnectingAirports />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="Past Trips"
-              to="/pass-trips"
+              to="past-trips"
               icon={<ModeOfTravel />}
               selected={selected}
               setSelected={setSelected}
@@ -159,7 +159,7 @@ const Sidebar = (props) => {
             </Typography>
             <Item
               title="Ambulances"
-              to="/devices"
+              to="devices"
               icon={<LocalShipping />}
               selected={selected}
               setSelected={setSelected}
@@ -173,14 +173,14 @@ const Sidebar = (props) => {
             </Typography>
             <Item
               title="Hospitals"
-              to="/hospital"
+              to="hospital"
               icon={<LocalHospital />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="Doctors"
-              to="/doctors"
+              to="doctors"
               icon={<People />}
               selected={selected}
               setSelected={setSelected}
@@ -195,7 +195,7 @@ const Sidebar = (props) => {
             </Typography>
             <Item
               title="Logout"
-              to="/logout"
+              to="logout"
               icon={<Logout />}
               selected={selected}
               setSelected={setSelected}

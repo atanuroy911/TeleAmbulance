@@ -8,7 +8,7 @@ const LoginPage = () => {
     async function loginUser(event) {
         event.preventDefault()
 
-        const response = await fetch('http://localhost:5000/api/login', {
+        const response = await fetch('http://localhost:5500/api/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -24,7 +24,7 @@ const LoginPage = () => {
         if (data.user) {
             localStorage.setItem('token', data.user)
             alert('Login successful')
-            window.location.href = '/dashboard'
+            window.location.href = '/dashboard/home'
         } else {
             alert('Please check your username and password')
         }

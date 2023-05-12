@@ -6,6 +6,7 @@ import Dashboard from '../../scenes/dashboard';
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { ColorModeContext, useMode } from "../../theme";
 import Sidebar from '../../scenes/global/Sidebar';
+import CurrentTrip from '../../scenes/currentTrip';
 
 const Welcome = () => {
     const [theme, colorMode] = useMode();
@@ -14,7 +15,7 @@ const Welcome = () => {
     const [name, setName] = useState('')
     const [loginState, setLoginState] = useState(false);
     async function populateData() {
-        const req = await fetch('http://localhost:5000/api/data', {
+        const req = await fetch('http://localhost:5500/api/data', {
             method: 'GET',
             headers: {
                 'x-access-token': localStorage.getItem('token'),
@@ -58,7 +59,8 @@ const Welcome = () => {
                             <main className="content">
                                 <Topbar setIsSidebar={setIsSidebar} />
                                 <Routes>
-                                    <Route path="/" element={<Dashboard />} />
+                                    <Route path='home' element={<Dashboard></Dashboard>}></Route>
+                                    <Route path='current-trip' element={<CurrentTrip></CurrentTrip>} />
                                 </Routes>
                             </main>
                         </div>
