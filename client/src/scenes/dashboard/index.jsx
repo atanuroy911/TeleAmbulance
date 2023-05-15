@@ -9,7 +9,7 @@ import Header from "../../components/Header";
 import StatBox from "../../components/charts/StatBox";
 // import ProgressCircle from "../../components/ProgressCircle";
 import AirlineSeatIndividualSuiteIcon from '@mui/icons-material/AirlineSeatIndividualSuite';
-import { ArrowForward, ArrowForwardIos, LocalHospital, LocalShipping, MedicalServices } from "@mui/icons-material";
+import { ArrowForward, LocalHospital, LocalShipping, MedicalServices } from "@mui/icons-material";
 import { useNavigate } from "react-router-dom";
 
 const Dashboard = () => {

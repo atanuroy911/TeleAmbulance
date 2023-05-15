@@ -8,7 +8,7 @@ import AirlineSeatIndividualSuiteIcon from '@mui/icons-material/AirlineSeatIndiv
 import { ArrowForward, LocalHospital, LocalShipping, MedicalServices } from "@mui/icons-material";
 import { useNavigate } from "react-router-dom";
 import StatBox2 from "../../components/charts/StatBox2";
-import CollapsibleTable from "../../components/tables/collapsableTable";
+import CollapsibleTable from "../../components/tables/TableGen";
 
 const HospitalPage = () => {
     const theme = useTheme();
@@ -155,7 +155,6 @@ const HospitalPage = () => {
                     <Box
                     p = "30px"
                     >
-                        <CollapsibleTable></CollapsibleTable>
                     </Box>
 
                 </Box>

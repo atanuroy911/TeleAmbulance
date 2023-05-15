@@ -52,7 +52,7 @@ const CurrentTrip = () => {
                 <Typography
                   variant="h3"
                   fontWeight="bold"
-                  color={colors.blueAccent[500]}
+                  color={colors.greenAccent[500]}
                 >
                   To Health Center
                 </Typography>
@@ -101,7 +101,7 @@ const CurrentTrip = () => {
             p="15px"
             >
                 <Typography
-                  color={colors.blueAccent[500]}
+                  color={colors.greenAccent[500]}
                   variant="h5"
                   fontWeight="600"
                 >
