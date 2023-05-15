@@ -30,7 +30,7 @@ const CurrentTrip = () => {
         >
           <Box
             gridColumn="span 8"
-            gridRow="span 2"
+            gridRow="span 12"
             backgroundColor={colors.primary[400]}
             height= '640px'
           >
@@ -52,7 +52,7 @@ const CurrentTrip = () => {
                 <Typography
                   variant="h3"
                   fontWeight="bold"
-                  color={colors.greenAccent[500]}
+                  color={colors.blueAccent[500]}
                 >
                   To Health Center
                 </Typography>
@@ -101,7 +101,7 @@ const CurrentTrip = () => {
             p="15px"
             >
                 <Typography
-                  color={colors.greenAccent[500]}
+                  color={colors.blueAccent[500]}
                   variant="h5"
                   fontWeight="600"
                 >
@@ -115,8 +115,6 @@ const CurrentTrip = () => {
           </Box>
         </Box>
       </Box>
-
-
 
     </>
 

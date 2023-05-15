@@ -50,16 +50,16 @@ export const tokens = (mode) => ({
           900: "#2c100f",
         },
         blueAccent: {
-          100: "#e1e2fe",
-          200: "#c3c6fd",
-          300: "#a4a9fc",
-          400: "#868dfb",
-          500: "#6870fa",
-          600: "#535ac8",
-          700: "#3e4396",
-          800: "#2a2d64",
-          900: "#151632",
-        },
+          100: "#dbe4f5",
+          200: "#b7cdf0",
+          300: "#94b6ea",
+          400: "#70a0e4",
+          500: "#4d89df",
+          600: "#3d6fc8",
+          700: "#2e55b1",
+          800: "#1e3b9b",
+          900: "#0f2184",
+          }
       }
     : {
         grey: {
@@ -107,16 +107,16 @@ export const tokens = (mode) => ({
           900: "#f8dcdb",
         },
         blueAccent: {
-          100: "#151632",
-          200: "#2a2d64",
-          300: "#3e4396",
-          400: "#535ac8",
-          500: "#6870fa",
-          600: "#868dfb",
-          700: "#a4a9fc",
-          800: "#c3c6fd",
-          900: "#e1e2fe",
-        },
+          100: "#0f2184",
+          200: "#1e3b9b",
+          300: "#2e55b1",
+          400: "#3d6fc8",
+          500: "#4d89df",
+          600: "#70a0e4",
+          700: "#94b6ea",
+          800: "#b7cdf0",
+          900: "#dbe4f5",
+          },          
       }),
 });
 
@@ -133,7 +133,7 @@ export const themeSettings = (mode) => {
               main: colors.primary[500],
             },
             secondary: {
-              main: colors.greenAccent[500],
+              main: colors.blueAccent[500],
             },
             neutral: {
               dark: colors.grey[700],
@@ -150,7 +150,7 @@ export const themeSettings = (mode) => {
               main: colors.primary[100],
             },
             secondary: {
-              main: colors.greenAccent[500],
+              main: colors.blueAccent[500],
             },
             neutral: {
               dark: colors.grey[700],

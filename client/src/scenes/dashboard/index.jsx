@@ -61,7 +61,7 @@ const Dashboard = () => {
             increase="2/4 Open"
             icon={
               <LocalHospital
-                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
+                sx={{ color: colors.blueAccent[600], fontSize: "26px" }}
               />
             }
           />
@@ -80,7 +80,7 @@ const Dashboard = () => {
             increase="2/2 Ready"
             icon={
               <MedicalServices
-                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
+                sx={{ color: colors.blueAccent[600], fontSize: "26px" }}
               />
             }
           />
@@ -99,7 +99,7 @@ const Dashboard = () => {
             increase="+5%"
             icon={
               <LocalShipping
-                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
+                sx={{ color: colors.blueAccent[600], fontSize: "26px" }}
               />
             }
           />
@@ -118,7 +118,7 @@ const Dashboard = () => {
             increase="+43%"
             icon={
               <AirlineSeatIndividualSuiteIcon
-                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
+                sx={{ color: colors.blueAccent[600], fontSize: "26px" }}
               />
             }
           />
@@ -148,7 +148,7 @@ const Dashboard = () => {
               <Typography
                 variant="h3"
                 fontWeight="bold"
-                color={colors.greenAccent[500]}
+                color={colors.blueAccent[500]}
               >
                 <>NA</>
               </Typography>
@@ -156,7 +156,7 @@ const Dashboard = () => {
             <Box>
               <IconButton>
                 <ArrowForward
-                  sx={{ fontSize: "26px", color: colors.greenAccent[500] }}
+                  sx={{ fontSize: "26px", color: colors.blueAccent[500] }}
                   onClick={() => { navigate('/current-trip'); }}
                 />
               </IconButton>
@@ -196,7 +196,7 @@ const Dashboard = () => {
             >
               <Box>
                 <Typography
-                  color={colors.greenAccent[500]}
+                  color={colors.blueAccent[500]}
                   variant="h5"
                   fontWeight="600"
                 >
@@ -208,7 +208,7 @@ const Dashboard = () => {
               </Box>
               <Box color={colors.grey[100]}>{transaction.date}</Box>
               <Box
-                backgroundColor={colors.greenAccent[500]}
+                backgroundColor={colors.blueAccent[500]}
                 p="5px 10px"
                 borderRadius="4px"
               >
@@ -237,7 +237,7 @@ const Dashboard = () => {
             {/* <ProgressCircle size="125" />
             <Typography
               variant="h5"
-              color={colors.greenAccent[500]}
+              color={colors.blueAccent[500]}
               sx={{ mt: "15px" }}
             >
               $48,352 revenue generated

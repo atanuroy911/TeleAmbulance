@@ -112,7 +112,7 @@ const Sidebar = (props) => {
                 >
                   {props.name}
                 </Typography>
-                <Typography variant="h5" color={colors.greenAccent[500]}>
+                <Typography variant="h5" color={colors.blueAccent[500]}>
                   Welcome Back
                 </Typography>
               </Box>

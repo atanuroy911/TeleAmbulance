@@ -7,6 +7,7 @@ import { CssBaseline, ThemeProvider } from "@mui/material";
 import { ColorModeContext, useMode } from "../../theme";
 import Sidebar from '../../scenes/global/Sidebar';
 import CurrentTrip from '../../scenes/currentTrip';
+import HospitalPage from '../../scenes/hospitals';
 
 const Welcome = () => {
     const [theme, colorMode] = useMode();
@@ -61,6 +62,7 @@ const Welcome = () => {
                                 <Routes>
                                     <Route path='home' element={<Dashboard></Dashboard>}></Route>
                                     <Route path='current-trip' element={<CurrentTrip></CurrentTrip>} />
+                                    <Route path='hospital' element={<HospitalPage></HospitalPage>} />
                                 </Routes>
                             </main>
                         </div>

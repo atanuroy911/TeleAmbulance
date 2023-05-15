@@ -15,10 +15,11 @@ import useFetch from './hooks/useFetch';
 import Header from './components/Header/Header';
 import Box from '@mui/material/Box';
 import LinearProgress from '@mui/material/LinearProgress';
+import HospitalPage from './scenes/hospitals';
 
 
 function App() {
-  
+
   return (
     <div className="flex flex-col">
 
@@ -31,6 +32,7 @@ function App() {
         <Route path='/dashboard' element={<Welcome></Welcome>}>
           <Route path='home' element={<Dashboard></Dashboard>}></Route>
           <Route path='current-trip' element={<CurrentTrip></CurrentTrip>} />
+          <Route path='hospital' element={<HospitalPage></HospitalPage>} />
         </Route>
       </Routes>
     </div>
